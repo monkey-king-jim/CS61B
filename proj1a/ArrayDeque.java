@@ -16,7 +16,7 @@ public class ArrayDeque<T> {
         size += 1;
     }
 
-    public ArrayDeque(ArrayDeque other) {
+    public ArrayDeque(ArrayDeque<T> other) {
         items = (T[]) new Object[other.items.length];
         size = other.size;
         for (int i = 0; i < size; i++) {
@@ -91,10 +91,7 @@ public class ArrayDeque<T> {
     }
 
     public boolean isEmpty() {
-        if (size == 0) {
-            return true;
-        }
-        return false;
+        return size == 0;
     }
 
     public int size() {

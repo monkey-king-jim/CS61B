@@ -28,7 +28,7 @@ public class LinkedListDeque<Item> {
         size += 1;
     }
 
-    public LinkedListDeque(LinkedListDeque other) {
+    public LinkedListDeque(LinkedListDeque<Item> other) {
         sentinel = new StuffNode(null, null, null);
         sentinel.next = sentinel;
         sentinel.prev = sentinel;
