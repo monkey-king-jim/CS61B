@@ -94,7 +94,7 @@ public class LinkedListDeque<Item> {
         return g.item;
     }
 
-    private Item getRecursive(int index) {
+    public Item getRecursive(int index) {
         if (index == 0) {
             return sentinel.next.item;
         } else {
